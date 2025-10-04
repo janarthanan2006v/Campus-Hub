@@ -26,33 +26,5 @@
     "club": "UI/UX",
     "date": "2025-10-16",
     "desc": "Layout, spacing, and contrast."
-  },
-  {
-    "id": 5,
-    "title": "Cybersecurity 101",
-    "club": "Security Club",
-    "date": "2025-10-18",
-    "desc": "Basics of staying safe online."
-  },
-  {
-    "id": 6,
-    "title": "Game Dev Night",
-    "club": "Game Club",
-    "date": "2025-10-20",
-    "desc": "Build a tiny 2D platformer."
-  },
-  {
-    "id": 7,
-    "title": "Cloud Hackathon",
-    "club": "Cloud Club",
-    "date": "2025-10-22",
-    "desc": "24h hackathon with prizes."
-  },
-  {
-    "id": 8,
-    "title": "AI Ethics Panel",
-    "club": "Philosophy",
-    "date": "2025-10-25",
-    "desc": "Debating the future of AI responsibly."
   }
 ]
