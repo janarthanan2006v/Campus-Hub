@@ -2,21 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Campus Hub</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Campus Hub — Events</title>
+  <meta name="description" content="Campus Hub: Student events and clubs."/>
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to content</a>
-
-<!-- HEADER -->
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="#">Campus Hub</a>
-    <!-- Desktop: nav inline; Mobile: hidden behind toggle -->
-    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">
-      ☰
-    </button>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
     <nav>
       <ul id="navList" class="nav-list">
         <li><a href="#clubs">Clubs</a></li>
@@ -27,44 +23,31 @@
   </div>
 </header>
 
-<!-- MAIN CONTENT -->
-<main id="main" class="container">
-  <!-- Events Section -->
-  <section id="events">
-    <h2>Upcoming Events</h2>
-    <input id="q" type="search" placeholder="Search events or clubs">
-    <ul id="eventList" class="card-list">
-      <!-- Cards: Desktop = 3–4 per row, Mobile = 1 per row -->
-      <li class="card">
-        <h3>AI Study Jam</h3>
-        <p>2025-10-10 • <span class="badge">Coding Club</span></p>
-        <p>Intro to ML notebooks and datasets.</p>
-      </li>
-      <li class="card">
-        <h3>Robotics Lab Visit</h3>
-        <p>2025-10-14 • <span class="badge">Robotics</span></p>
-        <p>See the bots and demos in action.</p>
-      </li>
-    </ul>
-    <p id="stats" class="stats">2 shown / 8 total</p>
-  </section>
+<main>
+  <div class="wrap">
+    <h1 class="visually-hidden">Campus Hub</h1>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About</h2>
-    <p>Campus Hub is a simple student portal for clubs and events.</p>
-    <div class="faq">
-      <button class="faq-q" aria-expanded="false" aria-controls="faq1">What is Campus Hub?</button>
-      <div id="faq1" class="faq-a" hidden>
-        <p>A demo portal for clubs and events.</p>
+    <section id="events" aria-labelledby="events-title">
+      <div class="section-head">
+        <h2 id="events-title">Upcoming Events</h2>
+        <div class="controls">
+          <label for="q" class="visually-hidden">Search events</label>
+          <input id="q" type="search" placeholder="Search events or clubs">
+        </div>
       </div>
-    </div>
-  </section>
+      <ul id="eventList" class="card-list" aria-live="polite"></ul>
+      <p id="stats" class="stats" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This is a small single-page site. Keep it simple and fast. Build two tiny interactions (see README).</p>
+    </section>
+  </div>
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
-  <small>© 2025 Campus Hub</small>
+  <small>© Your Team • Vibe Coding (Web Track — Option A)</small>
 </footer>
 
 <script src="script.js"></script>
